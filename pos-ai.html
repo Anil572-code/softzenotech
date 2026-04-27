@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--
+  FILE NOTES: index.html
+  Project: Softzeno Tech website
+  Purpose: Static HTML page for the Softzeno Tech company website.
+  Structure:
+  - <head> contains SEO/meta, fonts and stylesheet links.
+  - <header> contains brand, navigation, theme toggle and mobile menu.
+  - <main> contains page-specific content sections.
+  - <footer> contains brand summary, links and contact details.
+  - script.js handles theme toggle, mobile menu, reveal animations, form behavior and small interactions.
+-->
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Softzeno POS + AI — Smarter Business Operating System</title>
+  <meta name="description" content="Softzeno POS + AI combines billing, inventory, QR menus, reporting and AI-powered business insights for Nepalese businesses." />
+  <meta name="theme-color" content="#f6f2ee" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+<a class="skip-link" href="#main">Skip to content</a>
+  <!-- SITE HEADER: logo, navigation, theme toggle and mobile menu -->
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Softzeno Tech home">
+        <span class="brand-mark"><img src="assets/images/brand-icon.png" alt="Softzeno Tech logo" /></span>
+        <span class="brand-word"><span class="brand-soft">Softzeno</span> <strong>Tech</strong></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="">Home</a>
+        <a href="work.html" class="">Work</a>
+        <a href="services.html" class="">Services</a>
+        <a href="pos-ai.html" class="active">POS + AI</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="contact.html" class="">Contact</a>
+        <a class="mobile-nav-cta" href="contact.html">Get Started</a>
+      </nav>
+
+      
+      <div class="nav-actions">
+        <a class="nav-cta" href="contact.html">Get Started</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT: dedicated product storytelling page for Softzeno POS + AI -->
+  <main id="main">
+
+    <!-- POS + AI HERO: product positioning, core promise and primary actions -->
+    <section class="pos-ai-hero">
+      <div class="pos-ai-glow" aria-hidden="true"></div>
+      <div class="container pos-ai-hero-grid">
+        <div class="pos-ai-hero-copy reveal">
+          <span class="ai-badge">AI-Powered POS • Built for Nepalese businesses</span>
+          <h1>Beyond billing. Built for smarter business.</h1>
+          <p>
+            Softzeno POS + AI combines billing, inventory, QR menus, reporting and AI-powered business insights into one modern platform for restaurants, cafes, retail stores, sports centers and growing businesses.
+          </p>
+          <div class="pos-ai-hero-actions">
+            <a class="btn-bold primary" href="contact.html">Request Early Access <span>→</span></a>
+            <a class="btn-bold outline pos-ai-outline" href="#ai-modules">Explore AI Modules</a>
+          </div>
+          <div class="pos-ai-chip-row">
+            <span>AI: Sales Insights</span>
+            <span>AI: Stock Prediction</span>
+            <span>AI: Smart Reports</span>
+            <span>AI: WhatsApp Campaigns</span>
+          </div>
+        </div>
+
+        <div class="pos-ai-dashboard reveal" aria-label="Softzeno POS AI dashboard preview">
+          <div class="pos-ai-window-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="pos-ai-main-metric">
+            <small>AI Business Summary</small>
+            <h3>Sales are up 18%, but chicken stock may run out in 2 days.</h3>
+            <p>Suggested action: promote a Sekuwa + Drink combo tonight and reorder before Friday evening.</p>
+          </div>
+          <div class="pos-ai-metric-grid">
+            <article><small>Today Sales</small><strong>Rs. 48,500</strong></article>
+            <article><small>Orders</small><strong>126</strong></article>
+            <article><small>Top Item</small><strong>Chicken Sekuwa</strong></article>
+            <article><small>AI Alert</small><strong>Low Stock</strong></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFORMATION SECTION: shows why AI POS is different from traditional POS -->
+    <section class="ai-change-section">
+      <div class="container section-heading center reveal">
+        <span class="kicker">How it changes everything</span>
+        <h2>From billing software to business intelligence.</h2>
+        <p>Most POS tools store data. Softzeno POS + AI helps owners understand that data and decide what to do next.</p>
+      </div>
+
+      <div class="container comparison-grid">
+        <article class="comparison-card old-way reveal">
+          <span>Traditional POS</span>
+          <h3>Records what happened.</h3>
+          <ul>
+            <li>Creates bills and stores orders</li>
+            <li>Requires manual report checking</li>
+            <li>Stock problems are noticed late</li>
+            <li>No smart marketing support</li>
+            <li>Owner must analyze everything manually</li>
+          </ul>
+        </article>
+
+        <article class="comparison-card new-way reveal">
+          <span>Softzeno POS + AI</span>
+          <h3>Explains what to do next.</h3>
+          <ul>
+            <li>Generates sales and profit insights</li>
+            <li>Predicts stock and reorder risks</li>
+            <li>Suggests offers and campaigns</li>
+            <li>Summarizes performance instantly</li>
+            <li>Lets owners ask business questions naturally</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- AI MODULES SECTION: detailed AI agent/module cards -->
+    <section class="ai-modules-section" id="ai-modules">
+      <div class="container split-heading">
+        <div class="section-heading reveal">
+          <span class="kicker">AI Modules</span>
+          <h2>AI agents designed around real business problems.</h2>
+        </div>
+      </div>
+
+      <div class="container ai-module-grid">
+        <article class="ai-module-card reveal"><b>01</b><h3>AI Sales Analyst</h3><p>Understands best-selling items, weak products, peak hours and sales trends.</p></article>
+        <article class="ai-module-card reveal"><b>02</b><h3>AI Inventory Assistant</h3><p>Predicts low-stock risk, overstock issues and reorder needs before problems happen.</p></article>
+        <article class="ai-module-card reveal"><b>03</b><h3>AI Marketing Agent</h3><p>Creates WhatsApp offers, festival campaigns and customer comeback messages.</p></article>
+        <article class="ai-module-card reveal"><b>04</b><h3>AI Customer Insight</h3><p>Finds repeat customers, inactive customers and buying behavior patterns.</p></article>
+        <article class="ai-module-card reveal"><b>05</b><h3>AI Profit Assistant</h3><p>Helps owners understand margins, expenses and where profit may be leaking.</p></article>
+        <article class="ai-module-card reveal"><b>06</b><h3>AI Business Chat</h3><p>Ask your POS questions like “What sold most today?” or “What should I promote tomorrow?”</p></article>
+      </div>
+    </section>
+
+    <!-- ASK ANYTHING SECTION: shows conversational business intelligence -->
+    <section class="ask-business-section">
+      <div class="container ask-grid">
+        <div class="section-heading reveal">
+          <span class="kicker">Ask your business anything</span>
+          <h2>Talk to your POS like a business advisor.</h2>
+          <p>Owners should not need to open ten reports. They should be able to ask simple questions and get useful answers.</p>
+          <div class="prompt-chip-grid">
+            <span>What sold most today?</span>
+            <span>Which item is losing money?</span>
+            <span>What should I promote tomorrow?</span>
+            <span>Which stock is about to run out?</span>
+            <span>Generate a WhatsApp offer.</span>
+            <span>Summarize this week’s sales.</span>
+          </div>
+        </div>
+
+        <div class="ai-chat-preview reveal">
+          <div class="chat-message owner">What should I promote tomorrow?</div>
+          <div class="chat-message ai">
+            Your evening sales are strong. Chicken Sekuwa and cold drinks are often ordered together. Create a Sekuwa + Drink combo for tomorrow evening and promote it on WhatsApp.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES SECTION: shows broad market coverage -->
+    <section class="ai-industries-section">
+      <div class="container section-heading center reveal">
+        <span class="kicker">Built for different business types</span>
+        <h2>Not just restaurants. A system for modern operations.</h2>
+      </div>
+      <div class="container industry-cloud reveal">
+        <span>Restaurants</span><span>Cafes</span><span>Retail Stores</span><span>Clothing Shops</span><span>Sports Centers</span><span>Bars & Lounges</span><span>Bakeries</span><span>Salons</span><span>Supermarkets</span><span>Multi-branch Businesses</span>
+      </div>
+    </section>
+
+    <!-- NEPAL + TRUST SECTION: localized vision and AI safety -->
+    <section class="ai-trust-section">
+      <div class="container trust-grid">
+        <article class="trust-panel reveal">
+          <span class="kicker">Built in Nepal</span>
+          <h2>Designed around local business workflows.</h2>
+          <p>
+            Softzeno POS + AI is being designed with Nepalese restaurants, retail stores and service businesses in mind — practical workflows, simple adoption and owner-friendly reporting.
+          </p>
+        </article>
+        <article class="trust-panel reveal">
+          <span class="kicker">Owner stays in control</span>
+          <h2>AI suggests. You approve.</h2>
+          <p>
+            AI will not automatically change prices, delete products, edit inventory or send campaigns without approval. It gives recommendations and the owner decides what to apply.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ROADMAP SECTION: communicates product vision -->
+    <section class="ai-roadmap-section">
+      <div class="container section-heading center reveal">
+        <span class="kicker">Product roadmap</span>
+        <h2>A clear path from smart reports to AI business operations.</h2>
+      </div>
+      <div class="container roadmap-list">
+        <article class="reveal"><b>Phase 1</b><span>Smart Reports + AI Sales Analyst</span></article>
+        <article class="reveal"><b>Phase 2</b><span>Inventory Prediction + WhatsApp Campaigns</span></article>
+        <article class="reveal"><b>Phase 3</b><span>Customer Insights + Loyalty Intelligence</span></article>
+        <article class="reveal"><b>Phase 4</b><span>Owner Chat Assistant</span></article>
+        <article class="reveal"><b>Phase 5</b><span>Multi-branch AI Dashboard</span></article>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION: early access conversion -->
+    <section class="pos-ai-final-cta">
+      <div class="container cta-card reveal">
+        <span class="kicker">Early access</span>
+        <h2>Bring AI into your business workflow.</h2>
+        <p>Let’s discuss how Softzeno POS + AI can fit your restaurant, retail store, sports center or growing business.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-dark" href="contact.html">Request Early Access</a>
+          <a class="btn btn-light" href="https://wa.me/9779865354410?text=Hi%20Softzeno%20Tech%2C%20I%20want%20to%20know%20about%20Softzeno%20POS%20%2B%20AI.">Talk on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- FOOTER: brand summary, service links, company links and contact info -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-block">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><img src="assets/images/brand-icon.png" alt="Softzeno Tech logo" /></span>
+          <span class="brand-word"><span class="brand-soft">Softzeno</span> <strong>Tech</strong></span>
+        </a>
+        <p>Premium websites, digital marketing, QR menus, POS systems and business automation for brands that want to look serious and grow faster.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M13.5 8.5V6.7c0-.8.5-1.2 1.2-1.2H16V2.2c-.7-.1-1.4-.2-2.2-.2-2.7 0-4.5 1.6-4.5 4.6v1.9H6v3.7h3.3V22h4.2v-9.8h2.9l.4-3.7h-3.3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7zm9.8 1.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 6.8A5.2 5.2 0 1 1 6.8 12 5.2 5.2 0 0 1 12 6.8zm0 1.8A3.4 3.4 0 1 0 15.4 12 3.4 3.4 0 0 0 12 8.6z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M5.4 3.5A1.9 1.9 0 1 1 3.5 5.4a1.9 1.9 0 0 1 1.9-1.9zM3.7 8.3h3.5V20H3.7zm5.7 0h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5V20h-3.5v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V20H9.4z"/></svg>
+          </a>
+          <a href="https://wa.me/9779865354410?text=Hi%20Softzeno%20Tech%2C%20I%20want%20to%20start%20a%20project." class="whatsapp-social" aria-label="WhatsApp">
+            <img class="wa-icon theme-sensitive footer-whatsapp-icon" src="assets/icons/green.png" data-light-src="assets/icons/green.png" data-dark-src="assets/icons/white.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <a href="services.html#web">Website Development</a>
+        <a href="services.html#marketing">Digital Marketing</a>
+        <a href="services.html#pos">POS Systems</a>
+        <a href="pos-ai.html">POS + AI</a>
+        <a href="services.html#qr">QR Menu Design</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="work.html">Work / Case Studies</a>
+        <a href="why-us.html">Why Softzeno</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:softzenotech@gmail.com">softzenotech@gmail.com</a>
+        <a href="tel:+9779865354410">+977 9865354410</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Softzeno Tech. All rights reserved.</span>
+      <span>Built in Nepal • Serving globally</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float whatsapp-link compact-mobile-float" href="https://wa.me/9779865354410?text=Hi%20Softzeno%20Tech%2C%20I%20want%20to%20start%20a%20project." aria-label="Chat on WhatsApp">
+    <img class="wa-icon" src="assets/icons/white.png" alt="" />
+    <span>WhatsApp</span>
+  </a>
+  <script src="script.js"></script>
+
+</body>
+</html>
